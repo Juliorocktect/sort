@@ -11,8 +11,8 @@ public class Sort {
         int minimum, i;
         i=0;
         minimum = list[0];
-        while (i<= list.length){
-            if (list[i] <= minimum{
+        while (i < list.length){
+            if (list[i] <= minimum){
                 minimum=list[i];
 
             }
@@ -21,7 +21,13 @@ public class Sort {
         return minimum;
     }
     public int maximum () {
-
+        int max = 0;
+        for (int i = 0; i < list.length;i++){
+            if(list[i] > max){
+                max = list[i];
+            }
+        }
+        return max;
     }
     public void insertionSort() {
 
