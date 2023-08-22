@@ -8,7 +8,17 @@ public class Sort {
 
     }
     public int minimum () {
+        int minimum, i;
+        i=0;
+        minimum = list[0];
+        while (i<= list.length){
+            if (list[i] <= minimum{
+                minimum=list[i];
 
+            }
+            i++;
+        }
+        return minimum;
     }
     public int maximum () {
 
@@ -17,7 +27,7 @@ public class Sort {
 
     }
     public void selectionSort() {
-        
+
     }
 
 }
