@@ -36,15 +36,15 @@ public class Sort {
         return max;
     }
     public void insertionSort(){
-
+        
     }
     public void selectionSort() {
         for (int i=0; i < list.length ;i++){
-            int max = maximum (i);
-            swap (i,max);
+            int max = maximum(i);
+            swap(i,max);
         }
     }
-    private void swap (int a, int b) {
+    private void swap(int a, int b) {
         int zwischenPlatz = 0;
         zwischenPlatz = list[a];
         list [a] = list [b];
@@ -57,5 +57,5 @@ public class Sort {
         }
         System.out.println("\n");
     }
-
+    public int[] getList(){return list;}
 }
