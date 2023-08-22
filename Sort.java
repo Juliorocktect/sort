@@ -5,6 +5,11 @@ public class Sort {
         this.list = list;
     }
     public void bubbleSort() {
+        for (int i=0; i<list.length-1; i++){
+            if (list[i]<list[i+1]){
+                swap (i, i+1);
+            }
+        }
 
     }
     public int minimum () {
@@ -34,6 +39,18 @@ public class Sort {
     }
     public void selectionSort() {
 
+    }
+    private void swap (int a, int b) {
+        int zwischenPlatz = 0;
+        zwischenPlatz = list[a];
+        list [a] = list [b];
+        list [b] = zwischenPlatz;
+    }
+
+    public void ausgeben (){
+        for (int i=0; i<list.length; i++){
+            System.out.print (list[i] + " " + "\n");
+        }
     }
 
 }
