@@ -26,20 +26,23 @@ public class Sort {
         }
         return minimum;
     }
-    public int maximum () {
+    public int maximum (int a) {
         int max = 0;
-        for (int i = 0; i < list.length;i++){
+        for (int i = a; i<list.length;i++){
             if(list[i] > max){
-                max = list[i];
+                max = i;
             }
         }
         return max;
     }
-    public void insertionSort() {
+    public void insertionSort(){
 
     }
     public void selectionSort() {
-
+        for (int i=0; i < list.length ;i++){
+            int max = maximum (i);
+            swap (i,max);
+        }
     }
     private void swap (int a, int b) {
         int zwischenPlatz = 0;
