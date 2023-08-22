@@ -5,12 +5,14 @@ public class Sort {
         this.list = list;
     }
     public void bubbleSort() {
-        for (int i=0; i<list.length-1; i++){
-            if (list[i]<list[i+1]){
-                swap (i, i+1);
+        for (int j = 0; j < list.length;j++) {
+            for (int i = 0; i < list.length - 1; i++) {
+                if (list[i] > list[i + 1]) {
+                    swap(i, i + 1);
+                }
             }
         }
-
+            
     }
     public int minimum () {
         int minimum, i;
@@ -19,7 +21,6 @@ public class Sort {
         while (i < list.length){
             if (list[i] <= minimum){
                 minimum=list[i];
-
             }
             i++;
         }
@@ -49,8 +50,9 @@ public class Sort {
 
     public void ausgeben (){
         for (int i=0; i<list.length; i++){
-            System.out.print (list[i] + " " + "\n");
+            System.out.print(list[i] + " ");
         }
+        System.out.println("\n");
     }
 
 }
